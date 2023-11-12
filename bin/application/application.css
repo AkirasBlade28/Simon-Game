@@ -1,0 +1,13 @@
+
+#pane{
+	-fx-background-color: #111333;
+}
+#startButton{
+	-fx-background-color: #999111; 
+}
+#lable{
+	-fx-background-color: #111333;
+	-fx-text-alignment: center;
+	-fx-text-fill: white;	
+}
+

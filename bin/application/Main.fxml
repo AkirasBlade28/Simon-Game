@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Polygon fx:id="poly1" fill="#868200" layoutX="163.0" layoutY="133.0" onMousePressed="#polygon_1" onMouseReleased="#glowSetOff" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.1" />
+         </effect>
+      </Polygon>
+      <Polygon fx:id="poly3" fill="#ac031a" layoutX="263.0" layoutY="133.0" onMousePressed="#polygon_3" onMouseReleased="#glowSetOff" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Polygon>
+      <Polygon fx:id="poly2" fill="#0267c5" layoutX="213.0" layoutY="132.0" onMousePressed="#polygon_2" onMouseReleased="#glowSetOff" points="-50.00001525878906, -59.00000762939453, 49.999969482421875, -59.00000762939453, -1.52587890625E-5, 41.00001525878906" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Polygon>
+      <Polygon fx:id="poly5" fill="#8b0071" layoutX="213.0" layoutY="233.0" onMousePressed="#polygon_5" onMouseReleased="#glowSetOff" stroke="BLACK" strokeType="INSIDE">
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Polygon>
+      <Polygon fx:id="poly6" fill="#89918e" layoutX="263.0" layoutY="233.0" onMousePressed="#polygon_6" onMouseReleased="#glowSetOff" points="-3.0517578125E-5, 40.0, 49.999969482421875, -59.99998474121094, -50.00001525878906, -59.99998474121094" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Polygon>
+      <Polygon fx:id="poly4" fill="#00b321" layoutX="163.0" layoutY="233.0" onMousePressed="#polygon_4" onMouseReleased="#glowSetOff" points="-49.99999237060547, -59.99998474121094, 1.52587890625E-5, 40.0, 49.99998474121094, -59.99998474121094" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Polygon>
+      <Button fx:id="startButton" layoutX="185.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#button" text="START" textFill="#100000" wrapText="true" />
+      <Label fx:id="lable" alignment="CENTER" layoutX="164.0" layoutY="281.0" prefHeight="57.0" prefWidth="100.0" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
